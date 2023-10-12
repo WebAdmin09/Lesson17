@@ -157,32 +157,48 @@
 
 //////////////////////////////////////////////////9-masala
 
-let obj = { a: 1, b: 2, c: 3, };
+// let obj = { a: 1, b: 2, c: 3, };
 
-Object.prototype.keys = function () {
-    return Object.keys(this);
-};
-console.log(obj.keys());
+// Object.prototype.keys = function () {
+//     return Object.keys(this);
+// };
+// console.log(obj.keys());
 
 
 //////////////////////////////////////////////////10-masala
 
-function Student(firstName, lastName, university, course, totalYears, isGrant) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.university = university;
-    this.course = course;
-    this.totalYears = totalYears;
-    this.isGrant = isGrant;
-}
+// class Student {
+//     firstName: string;
+//     lastName: string;
+//     university: string;
+//     course: number;
+//     totalYears: number;
+//     isGrant: boolean;
 
-Student.prototype.getInfo = function () {
-    let grantStatus = this.isGrant ? "grant asosida" : "o'qiydi";
-    let graduationYear = this.totalYears + 1;
-    let info = `${this.firstName} ${this.lastName} ${this.university} universitetida ${this.course}-kursda ${grantStatus} o'qiydi. 1 yildan keyin universitetdan qutuladi.`;
-    return info;
-};
+//     constructor(
+//         firstName: string,
+//         lastName: string,
+//         university: string,
+//         course: number,
+//         totalYears: number,
+//         isGrant: boolean
+//     ) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.university = university;
+//         this.course = course;
+//         this.totalYears = totalYears;
+//         this.isGrant = isGrant;
+//     }
 
-let student = new Student("Abdulaziz", "Programmer", "TATU", 3, 4, true);
-let result = student.getInfo();
-console.log(result);
+//     getInfo(): string {
+//         const grantStatus = this.isGrant ? "grant asosida" : "o'qiydi";
+//         const graduationYear = this.totalYears + 1;
+//         const info = `${this.firstName} ${this.lastName} ${this.university} universitetida ${this.course}-kursda ${grantStatus} o'qiydi. 1 yildan keyin universitetdan qutuladi.`;
+//         return info;
+//     }
+// }
+
+// const student = new Student("Abdulaziz", "Programmer", "TATU", 3, 4, true);
+// const result = student.getInfo();
+// console.log(result);
